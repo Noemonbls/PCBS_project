@@ -1,6 +1,6 @@
  ## PCBS project Noëmon BAUDOUIN
 
-#Reproduction of the experiment in Shams et al 2000
+Reproduction of the experiment in Shams et al 2000
 
 The main goal of the experiment is to prove that audio stimulus can impact visual perception : 
 We are trying here to design an experiment which is supposed to implement a multisensory illusion. 
