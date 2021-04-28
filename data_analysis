@@ -1,0 +1,22 @@
+import expyriment
+import os
+import pandas as pd
+import matplotlib.pyplot as plt
+data_path = 'C:\\Users\\DIEU\\Documents\\repositories\\PCBS_project\\data' #To change if run on another computer
+os.chdir(data_path)
+expyriment.misc.data_preprocessing.write_concatenated_data(data_path, 'main', output_file='concatenated_data_all_participants', delimiter=',')
+
+data=pd.read_csv('concatenated_data_all_participants',header=1)
+sorted_data=data.sort_values(by=['condition'])
+#We convert respkeys to number of perceive flashes to facilitate comprehension
+sorted_data['respkey']=sorted_data['respkey']-256
+final_data=sorted_data.rename(columns={"respkey" : "n_flash_perceived"})
+
+y=[]
+for n_flash in list_n_flashes:
+    mean_response_participants=final_data[final_data['n_flash']==n_flash].mean()
+    y.append(mean_response_participants['n_flash_perceived'])
+plt.plot(list_n_flashes,y)
+plt.xlabel('Number of flashes presented to participants across all beeps conditions')
+plt.ylabel('Number of flashes perceived by participants')
+plt.show()

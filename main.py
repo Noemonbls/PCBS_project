@@ -14,9 +14,8 @@ n_min_beeps = 0
 N_REPLICATIONS_PER_CONDITION = 5 #each stimulus configuration is run 5 times on each observer
 list_possible_conditions = compute_list_possible_conditions_2002_experiment(n_max_flashes,n_min_flashes,n_max_beeps,n_min_beeps)
 N_TRIALS= (len(list_possible_conditions)) * N_REPLICATIONS_PER_CONDITION
-list_all_possible_trials = [(1,0),(1,0),(1,2),(1,3),(4,0),(4,1)]
-#list_all_possible_trials = list_possible_conditions * N_REPLICATIONS_PER_CONDITION
-#random.shuffle(list_all_possible_trials)
+list_all_possible_trials = list_possible_conditions * N_REPLICATIONS_PER_CONDITION
+random.shuffle(list_all_possible_trials)
 MIN_WAIT_TIME = 1000
 MAX_WAIT_TIME = 2000
 list_valid_keys = misc.constants.K_ALL_DIGITS + misc.constants.K_ALL_KEYPAD_DIGITS
@@ -35,11 +34,11 @@ position_target = (0,-300)
 radius_target = 75
 
 frequency_beep = 3500 #Hz
-duration_beep = 7*10 #ms
-time_between_targets = 50*10 #ms
-time_between_beeps = 50*10 #ms
-time_presentation_target = 17*10 #ms
-delay_first_beep_first_flash = 16*25 #ms
+duration_beep = 7 #ms
+time_between_targets = 50 #ms
+time_between_beeps = 50 #ms
+time_presentation_target = 17 #ms
+delay_first_beep_first_flash = 16 #ms
 
 
 #Experiment initialization
@@ -74,7 +73,7 @@ target_plus_cross_screen = stimuli.BlankScreen()
 target.plot(target_plus_cross_screen)
 fixation_cross.plot(target_plus_cross_screen)
 
-exp.add_data_variable_names(['trial', 'condition', 'respkey', 'RT',])
+exp.add_data_variable_names(['trial', 'condition','n_flash','n_beep', 'respkey', 'RT',])
 
 beep.preload()
 target_plus_cross_screen.preload()
@@ -127,7 +126,7 @@ for i_trial in range(N_TRIALS):
     while key not in list_valid_keys :
         key_error_screen.present()
         key,rt = exp.keyboard.wait()
-    exp.data.add([i_trial,trial_condition,key,rt])
+    exp.data.add([i_trial,trial_condition,n_flash,n_beep,key,rt])
 
 
 control.end()
