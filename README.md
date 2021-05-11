@@ -14,6 +14,10 @@ The data analysis pipeline is contained in data_analysis, and plots the data con
 
 Finally, data_analysis_notebook contains the analysis I've obtained with the data I've recolted, and a few comments.
 
-To run the code, simply download this repository as a zip file, extract it anywhere, and run audiovisual_illusion.py
+To run the code, simply download this repository as a zip file, extract it anywhere, and run audiovisual_illusion.py. The data is saved in the 'PCBS_project/data' folder by default. data folder contains participants 1-5. 
+To run the analysis, run data_analysis.py. If your data is not saved in 'PCBS_project/data', this code will not work.
+
+
+#TO DO : the implementation of the exact position of targets and flashes were not implemented. Data from a bigger number of participants need to be collected, and data_analysis may gain from implementation of statistical tests (t-test between conditions maybe). 
 
 
