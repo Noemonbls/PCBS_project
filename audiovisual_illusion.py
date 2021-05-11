@@ -1,5 +1,6 @@
 """ This is a replication of Shams et al 2000 experiment.
-At each trial, participants must report the number of flashes they perceive.
+At each trial, participants must report the number of flashes they perceive. 
+The flashes are sometimes accompanied with audio beeps. The hypothesis is that presentation of multiple audio beeps with one flash will cause participants to report multiple flashes.
 """
 ## A few necessary imports
 import random
@@ -49,9 +50,9 @@ control.initialize(exp)
 main_instructions = stimuli.TextScreen("Instructions",
     f"""From time to time, a series of 1-4 flashes will appear onscreen.
 
-    Your task is to press the number key corresponding to the number of discs you perceived
+    Your task is to press the number key corresponding to the number of flashes you perceived
 
-    Do it as fast as possible (we measure your reaction time)
+    Please do it as fast as possible
 
     Please keep fixation on the center cross
 
