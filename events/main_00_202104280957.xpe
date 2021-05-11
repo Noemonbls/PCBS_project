@@ -1,0 +1,68 @@
+#Expyriment 0.10.0 (Python 3.8.5), .xpe-file, coding: cp1252
+#date: Wed Apr 28 2021 09:57:18
+#sha1: e362b7
+#modules: useful_functions_PCBS_project.py (95de67)
+#display: size=(1920, 1080), window_mode=False, open_gl=2
+#os: uname_result(system='Windows', node='LAPTOP-6TU2LLJE', release='10', version='10.0.19041', machine='AMD64', processor='Intel64 Family 6 Model 142 Stepping 9, GenuineIntel')
+Time,Type,Event,Value,Detail,Detail2
+37370,design,log,
+#design: #exp: debug_Shams2000
+#design: #dvn: trial,condition,respkey,RT
+#design: block_cnt,block_id,trial_cnt,trial_id
+37370,design,logged,
+37370,Experiment,started
+37454,Stimulus,presented,0
+44430,Keyboard,received,32,wait
+44434,Stimulus,presented,6
+46301,Stimulus,presented,7
+46474,Stimulus,presented,6
+47038,Stimulus,presented,1
+47672,Keyboard,received,257,wait
+47675,Stimulus,presented,6
+49438,Stimulus,presented,7
+49612,Stimulus,presented,6
+50167,Stimulus,presented,1
+50476,Keyboard,received,257,wait
+50479,Stimulus,presented,6
+51754,Stimulus,played,b'C:\\Users\\DIEU\\AppData\\Local\\Temp\\expyriment_2h8tx2na\\freq3500_dur70.0_mpykfdcj.wav'
+52157,Stimulus,presented,7
+52330,Stimulus,presented,6
+52330,Stimulus,played,b'C:\\Users\\DIEU\\AppData\\Local\\Temp\\expyriment_2h8tx2na\\freq3500_dur70.0_mpykfdcj.wav'
+52890,Stimulus,presented,1
+53326,Keyboard,received,257,wait
+53329,Stimulus,presented,6
+54848,Stimulus,played,b'C:\\Users\\DIEU\\AppData\\Local\\Temp\\expyriment_2h8tx2na\\freq3500_dur70.0_mpykfdcj.wav'
+55251,Stimulus,presented,7
+55424,Stimulus,presented,6
+55424,Stimulus,played,b'C:\\Users\\DIEU\\AppData\\Local\\Temp\\expyriment_2h8tx2na\\freq3500_dur70.0_mpykfdcj.wav'
+55924,Stimulus,played,b'C:\\Users\\DIEU\\AppData\\Local\\Temp\\expyriment_2h8tx2na\\freq3500_dur70.0_mpykfdcj.wav'
+56484,Stimulus,presented,1
+56782,Keyboard,received,257,wait
+56786,Stimulus,presented,6
+58499,Stimulus,presented,7
+58672,Stimulus,presented,6
+59175,Stimulus,presented,7
+59348,Stimulus,presented,6
+59851,Stimulus,presented,7
+60024,Stimulus,presented,6
+60527,Stimulus,presented,7
+60700,Stimulus,presented,6
+61255,Stimulus,presented,1
+61524,Keyboard,received,260,wait
+61528,Stimulus,presented,6
+63256,Stimulus,played,b'C:\\Users\\DIEU\\AppData\\Local\\Temp\\expyriment_2h8tx2na\\freq3500_dur70.0_mpykfdcj.wav'
+63659,Stimulus,presented,7
+63831,Stimulus,presented,6
+64335,Stimulus,presented,7
+64508,Stimulus,presented,6
+65011,Stimulus,presented,7
+65184,Stimulus,presented,6
+65687,Stimulus,presented,7
+65860,Stimulus,presented,6
+66416,Stimulus,presented,1
+66642,Keyboard,received,260,wait
+66645,stderr,received,'Traceback (most recent call last):'
+66645,stderr,received,'  File "main.py", line 87, in <module>'
+66647,stderr,received,'    trial_condition = list_all_possible_trials[i_trial]'
+66647,stderr,received,'IndexError: list index out of range'
+66655,Data,saved

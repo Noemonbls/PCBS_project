@@ -3,10 +3,10 @@ import expyriment
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
-relative_data_path = './data' #To change if run on another computer
+data_path = './data'
 
 ##We read data from the expyriment file, and clean it
-expyriment.misc.data_preprocessing.write_concatenated_data(relative_data_path, 'audiovisual_illusion_task', output_file='concatenated_data_all_participants', delimiter=',')
+expyriment.misc.data_preprocessing.write_concatenated_data(data_path, 'main', output_file='concatenated_data_all_participants', delimiter=',')
 
 data=pd.read_csv('concatenated_data_all_participants',header=1)
 sorted_data=data.sort_values(by=['condition'])

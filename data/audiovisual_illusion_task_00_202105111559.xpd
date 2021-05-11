@@ -1,0 +1,11 @@
+#Expyriment 0.10.0 (Python 3.8.5), .xpd-file, coding: cp1252
+#date: Tue May 11 2021 15:59:18
+#--EXPERIMENT INFO
+#e mainfile: main.py
+#e sha1: 4173b4
+#e modules: useful_functions_PCBS_project.py (2388f5)
+#e Experiment: debug_Shams2000
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 0
+subject_id,trial,condition,n_flash,n_beep,respkey,RT

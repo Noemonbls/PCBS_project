@@ -1,0 +1,32 @@
+#Expyriment 0.10.0 (Python 3.8.5), .xpe-file, coding: cp1252
+#date: Tue May 11 2021 15:59:18
+#sha1: 4173b4
+#modules: useful_functions_PCBS_project.py (2388f5)
+#display: size=(1920, 1080), window_mode=False, open_gl=2
+#os: uname_result(system='Windows', node='LAPTOP-6TU2LLJE', release='10', version='10.0.19041', machine='AMD64', processor='Intel64 Family 6 Model 142 Stepping 9, GenuineIntel')
+Time,Type,Event,Value,Detail,Detail2
+11144,design,log,
+#design: #exp: debug_Shams2000
+#design: #dvn: trial,condition,n_flash,n_beep,respkey,RT
+#design: block_cnt,block_id,trial_cnt,trial_id
+11144,design,logged,
+11144,Experiment,started
+11230,Stimulus,presented,0
+12214,Keyboard,received,13,wait
+12218,Stimulus,presented,6
+14199,Stimulus,presented,7
+14221,Stimulus,presented,6
+14274,Stimulus,presented,7
+14294,Stimulus,presented,6
+14347,Stimulus,presented,7
+14370,Stimulus,presented,6
+14423,Stimulus,presented,7
+14443,Stimulus,presented,6
+14553,Stimulus,presented,1
+14748,Keyboard,received,121,wait
+14874,Stimulus,presented,2
+15545,Experiment,paused
+15559,Stimulus,presented,10
+16100,Keyboard,received,y,wait_char
+16100,Experiment,ended
+16138,Stimulus,presented,10
