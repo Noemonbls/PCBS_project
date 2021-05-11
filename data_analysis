@@ -3,19 +3,22 @@ import expyriment
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
-data_path = 'C:\\Users\\DIEU\\Documents\\repositories\\PCBS_project\\data' #To change if run on another computer
+data_path = '/data' #To change if run on another computer
 os.chdir(data_path)
+
 ##We read data from the expyriment file, and clean it
 expyriment.misc.data_preprocessing.write_concatenated_data(data_path, 'main', output_file='concatenated_data_all_participants', delimiter=',')
 
 data=pd.read_csv('concatenated_data_all_participants',header=1)
 sorted_data=data.sort_values(by=['condition'])
-#We convert respkeys to number of perceive flashes to facilitate comprehension
+
+#We convert respkeys to number of perceived flashes to facilitate comprehension
 sorted_data['respkey']=sorted_data['respkey']-256
 final_data=sorted_data.rename(columns={"respkey" : "n_flash_perceived"})
 
 
 ##Now we can analyze our data
+
 n_participants = final_data['subject_id'].max()
 title_one_flash = f"""Averaged response of {n_participants} participants to a single flash of light"""
 title_multiple_flashes_zero_beep = f"""Averaged response of {n_participants} participants to multiple flashes of light without beeps """
