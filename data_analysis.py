@@ -4,7 +4,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 data_path = './data'
-
+os.chdir(data_path)
 ##We read data from the expyriment file, and clean it
 expyriment.misc.data_preprocessing.write_concatenated_data(data_path, 'main', output_file='concatenated_data_all_participants', delimiter=',')
 
