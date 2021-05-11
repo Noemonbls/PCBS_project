@@ -9,9 +9,11 @@ This is particularly interesting because this flash of light is an unambiguous s
 It shows that the visual modality is not as central as we may be prone to think, since we show here that audio perception overrides visual stimulus classification.
 
 
-main.py contains the code needed to run the experiment, which calls useful_functions_PCBS_project. You will need a numeric keypad for this program to function correctly. 
-The data analysis pipeline is contained in data_analysis. For it to function, you'll need your data to be put into a "data" folder in the same directory as the code. 
+audiovisual_illusion.py contains the code needed to run the experiment, which calls useful_functions_PCBS_project. You will need a numeric keypad for this program to function correctly. 
+The data analysis pipeline is contained in data_analysis, and plots the data contained in the "data" folder.
 
 Finally, data_analysis_notebook contains the analysis I've obtained with the data I've recolted, and a few comments.
+
+To run the code, simply download this repository as a zip file, extract it anywhere, and run audiovisual_illusion.py
 
 
